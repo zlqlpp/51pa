@@ -16,7 +16,7 @@ headers = {
     'cookie': 'd5H4_2132_saltkey=lXRErDLD; d5H4_2132_lastvisit=1576723420; d5H4_2132_atarget=1; d5H4_2132_auth=95504%2BSA8wUWBRgJe4prTXqc%2FqrhvKUvhPXsxaLeX5ED5%2FvusvhyYeRzusEHJzb1rk61WghKHBNZ5LKpGseiWJyAVQ; d5H4_2132_lastcheckfeed=52671%7C1576743158; d5H4_2132_smile=1D1; d5H4_2132_nofavfid=1; d5H4_2132_visitedfid=46D2; d5H4_2132_forum_lastvisit=D_2_1576743198D_50_1576743207D_46_1576743215; d5H4_2132_sid=hd8MdQ; d5H4_2132_viewid=tid_52333; d5H4_2132_viewhash=cb3d4b45566ec684ad15a40d5873a073; d5H4_2132_ulastactivity=0bf4Qvovjc48zBkXW9rhUon8grnq%2BD%2BuILXXqRx%2FAFgcqeI8E2gv; d5H4_2132_sendmail=1; d5H4_2132_lastact=1576827928%09home.php%09spacecp',
 }
 
-urll = 'https://www.r4pe.info/thread-370-1-185.html'
+urll = 'https://www.r4pe.info/thread-48276-1-1.html'
 
 response = requests.get(urll, headers=headers)
 #response.encoding = 'gbk'
