@@ -27,9 +27,9 @@ try:
    for row in results:
       id = row[0]
       title = row[1]
-      print(id, title )
-      print(getStr(title))
-      #cursor.execute("UPDATE qqvx_1 SET title_id='%s' WHERE id = '%d'" % (getStr(title),id))
+      #print(id, title )
+      #print(getStr(title))
+      cursor.execute("UPDATE qqvx_1 SET title_id='"+getStr(title)+"' WHERE id = "+id)
 
       
 except Exception as err:
