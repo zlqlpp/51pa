@@ -44,7 +44,7 @@ for i in list(range(186)):
                 
                 sql = "INSERT INTO tiyanbaogao2( num ,url, title, date, realdate, content,content2) \
                       VALUES (%s, '%s',  '%s',  '%s',  '%s',  '%s','%s')" % \
-                      (count, mm.get('href'), biaoti.text, fabushijian[8].text,'','', contents[0].text)
+                      (count, mm.get('href'), biaoti.text, fabushijian[8].text,'','', contents[0].text.replace('\'',''))
                 
                 cursor.execute(sql)
                 db.commit()
