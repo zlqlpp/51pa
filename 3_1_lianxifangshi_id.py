@@ -32,7 +32,7 @@ try:
       su = "UPDATE qqvx_1 SET title_id='%s' WHERE id = %d" % \
            (getStr(title),id)
       print(su)
-      #cursor.execute("UPDATE qqvx_1 SET title_id='%s' WHERE id = %d" % (getStr(title),id))
+      cursor.execute(su)
 
       
 except Exception as err:
