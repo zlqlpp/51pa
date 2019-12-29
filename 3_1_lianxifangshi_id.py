@@ -29,7 +29,8 @@ try:
       title = row[1]
       #print(id, title )
       #print(getStr(title))
-	  su = "UPDATE qqvx_1 SET title_id='%s' WHERE id = %d" % (getStr(title),id)
+	  su = "UPDATE qqvx_1 SET title_id='%s' WHERE id = %d" % \
+	       (getStr(title),id)
 	  print(su)
       #cursor.execute("UPDATE qqvx_1 SET title_id='%s' WHERE id = %d" % (getStr(title),id))
 
