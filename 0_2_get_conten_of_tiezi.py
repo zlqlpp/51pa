@@ -31,7 +31,7 @@ ems = bf.find_all('em')
 print(ems[8].text)
 
 contents = bf.find_all('td',class_='t_f')
-print(contents[0].text)
+print(contents[0].text.replace('\'',''))
 
 #with open('/root/python3/qqvx.txt', 'wt') as f:
 #    f.write(response.text)
