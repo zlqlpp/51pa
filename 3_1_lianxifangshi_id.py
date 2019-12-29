@@ -5,7 +5,7 @@ import time
 import logging
 import re
 
-logging.basicConfig(filename='lianxifangshi.log',level=logging.DEBUG)
+logging.basicConfig(filename='get_id_in_tile.log',level=logging.DEBUG)
 
 def getStr(title):
     p = re.compile('[0-9a-zA-Z]')
@@ -31,8 +31,8 @@ try:
       cursor.execute("UPDATE qqvx_1 SET title_id='%s' WHERE id = '%d'" % (getStr(title),id))
 
       
-except:
-   print "Error: unable to fecth data"
+except Exception as err:
+       print(err)
 
 db.close()
 
