@@ -31,7 +31,7 @@ try:
       #print(getStr(title))
       su = "UPDATE tiyanbaogao_1 SET title_id='%s' WHERE id = %d" %  (getStr(title),id)
       cursor.execute(su)
-      db.commit()
+   db.commit()
 
       
 except Exception as err:
