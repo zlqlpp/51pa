@@ -59,11 +59,10 @@ def read07Excel(path):
         print()
 
 
-file_2003 = 'data/2003.xls'
 file_2007 = 'data/2007.xlsx'
 
-write03Excel(file_2003)
-read03Excel(file_2003)
+#write03Excel(file_2003)
+read03Excel('/root/lllllffffff.xls')
 
-write07Excel(file_2007)
-read07Excel(file_2007)
+#write07Excel(file_2007)
+#read07Excel(file_2007)
