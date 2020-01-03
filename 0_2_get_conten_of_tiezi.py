@@ -1,3 +1,4 @@
+##获取贴子的内容
 import requests
 from bs4 import BeautifulSoup
 headers = {

@@ -1,5 +1,5 @@
+##mysql的增删改查
 import pymysql
- 
 
 db = pymysql.connect("127.0.0.1","root","qrkcgya520","yixian" )
 cursor = db.cursor()

@@ -1,4 +1,5 @@
 import requests
+##把联系方式的  标题中的  id 提取出来，更新到表上的单独字段
 from bs4 import BeautifulSoup
 import pymysql
 import time

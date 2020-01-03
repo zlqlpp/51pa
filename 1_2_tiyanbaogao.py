@@ -1,3 +1,4 @@
+##获取4万个体验报告贴子，会包括所有内容 ，包括图片链接 
 import requests
 from bs4 import BeautifulSoup
 import pymysql

@@ -1,3 +1,4 @@
+##把体验报告   标题中的 id  ，匹配出来 更新到表上的 单独字段上
 import requests
 from bs4 import BeautifulSoup
 import pymysql
