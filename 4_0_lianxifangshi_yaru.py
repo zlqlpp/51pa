@@ -101,7 +101,7 @@ while 1==1:
            title = row[1]
            content = row[3]
            title_cn = row[5]
-           fatie('id'+id+title_cn,content)
+           fatie('id'+str(id)+title_cn,content)
            #print(content )
            #print(getStr(title))
            su = "UPDATE qqvx_1 SET flag='1' WHERE id = %d" %  (id)
