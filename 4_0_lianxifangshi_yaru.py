@@ -82,9 +82,9 @@ def fatie(title1,content1):
          ('file', ''),
          ('file', ''),
        ]
-       requests.post('http://dc63.cn2gia.xyz/forum.php', headers=headers, params=params, cookies=cookies, data=data, verify=False)
+       res = requests.post('http://dc63.cn2gia.xyz/forum.php', headers=headers, params=params, cookies=cookies, data=data, verify=False)
        print(title1,content1 )
-       print(requests.text)
+       print(res.text)
        return 
 
 
