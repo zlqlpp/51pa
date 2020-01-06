@@ -32,7 +32,7 @@ cursor = db.cursor()
  
 
 try:
-   cursor.execute("SELECT id,title FROM qqvx_1  where title_id is null limit 10000 ")
+   cursor.execute("SELECT id,title FROM qqvx_1  where title_cn is null limit 10000 ")
    results = cursor.fetchall()
    for row in results:
       id = row[0]
