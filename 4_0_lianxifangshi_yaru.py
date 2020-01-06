@@ -88,7 +88,7 @@ def fatie(title1,content1):
 
 while 1==1:
      try:
-        cursor.execute(" SELECT id, title, DATE, content, title_id FROM qqvx_1 where flag is null or flag='' order by id desc limit 100")
+        cursor.execute(" SELECT id, title, DATE, content, title_id,title_cn FROM qqvx_1 where flag is null or flag='' order by id desc limit 100")
         results = cursor.fetchall()
         if cursor.rowcount==0:
           break
@@ -97,7 +97,8 @@ while 1==1:
            id = row[0]
            title = row[1]
            content = row[3]
-           fatie(title,content)
+           title_cn = row[5]
+           fatie('id'+id+title_cn,content)
            #print(content )
            #print(getStr(title))
            su = "UPDATE qqvx_1 SET flag='1' WHERE id = %d" %  (id)
