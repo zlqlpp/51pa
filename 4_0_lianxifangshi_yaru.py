@@ -60,31 +60,32 @@ params = (
 
 def fatie(title1,content1):
     data = [
-      ('formhash', 'dccfc34d'),
-      ('posttime', '1578304099'),
-      ('wysiwyg', '1'),
-      ('subject', title1),
-      ('message', content1),
-      ('replycredit_extcredits', '0'),
-      ('replycredit_times', '1'),
-      ('replycredit_membertimes', '1'),
-      ('replycredit_random', '100'),
-      ('readperm', ''),
-      ('price', '3'),
-      ('tags', ''),
-      ('rushreplyfrom', ''),
-      ('rushreplyto', ''),
-      ('rewardfloor', ''),
-      ('replylimit', ''),
-      ('stopfloor', ''),
-      ('creditlimit', ''),
-      ('allownoticeauthor', '1'),
-      ('usesig', '1'),
-      ('save', ''),
-      ('file', ''),
-      ('file', ''),
-    ]
+             ('formhash', 'dccfc34d'),
+             ('posttime', '1578304099'),
+             ('wysiwyg', '1'),
+             ('subject', title1),
+             ('message', content1),
+             ('replycredit_extcredits', '0'),
+             ('replycredit_times', '1'),
+             ('replycredit_membertimes', '1'),
+             ('replycredit_random', '100'),
+             ('readperm', ''),
+             ('price', '3'),
+             ('tags', ''),
+             ('rushreplyfrom', ''),
+             ('rushreplyto', ''),
+             ('rewardfloor', ''),
+             ('replylimit', ''),
+             ('stopfloor', ''),
+             ('creditlimit', ''),
+             ('allownoticeauthor', '1'),
+             ('usesig', '1'),
+             ('save', ''),
+             ('file', ''),
+             ('file', ''),
+           ]
     response = requests.post('http://dc63.cn2gia.xyz/forum.php', headers=headers, params=params, cookies=cookies, data=data, verify=False)
+    print('done')
     return 
 
 
