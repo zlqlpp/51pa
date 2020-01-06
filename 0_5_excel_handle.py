@@ -28,9 +28,10 @@ def read03Excel(path):
     worksheet = workbook.sheet_by_name(sheets[0])
     for i in range(0, worksheet.nrows):
         row = worksheet.row(i)
-        for j in range(0, worksheet.ncols):
-            print(worksheet.cell_value(i, j), "\t", end="")
-        print()
+        #for j in range(0, worksheet.ncols):
+        #    print(worksheet.cell_value(i, j), "\t", end="")
+        #print()
+        print(worksheet.cell_value(i, 0)+worksheet.cell_value(i, 1)+worksheet.cell_value(i, 2))
 
 
 def write07Excel(path):
