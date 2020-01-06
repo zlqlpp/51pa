@@ -84,7 +84,7 @@ def fatie(title1,content1):
        ]
        requests.post('http://dc63.cn2gia.xyz/forum.php', headers=headers, params=params, cookies=cookies, data=data, verify=False)
        print(title1,content1 )
-       print(response.text)
+       print(requests.text)
        return 
 
 
@@ -101,7 +101,7 @@ while 1==1:
            content = row[3]
            title_cn = row[5]
            fatie('id'+str(id)+title_cn,content)
-           #print(getStr(title))
+           print(getStr(title))
            su = "UPDATE qqvx_1 SET flag='1' WHERE id = %d" %  (id)
            cursor.execute(su)
            db.commit()
