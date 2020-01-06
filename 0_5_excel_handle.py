@@ -31,7 +31,7 @@ def read03Excel(path):
         #for j in range(0, worksheet.ncols):
         #    print(worksheet.cell_value(i, j), "\t", end="")
         #print()
-        print(worksheet.cell_value(i, 0)+worksheet.cell_value(i, 1)+worksheet.cell_value(i, 2)+worksheet.cell_value(i, 3)+worksheet.cell_value(i, 4))
+        print(worksheet.cell_value(i, 0)+worksheet.cell_value(i, 1)+worksheet.cell_value(i, 2)+worksheet.cell_value(i, 3)+worksheet.cell_value(i, 5))
 
 
 def write07Excel(path):
