@@ -98,7 +98,7 @@ def read03Excel(path):
         #print()
         print(worksheet.cell_value(i, 0)+worksheet.cell_value(i, 1)+worksheet.cell_value(i, 2)+worksheet.cell_value(i, 3)+worksheet.cell_value(i, 5))
         title1 = worksheet.cell_value(i, 0)+worksheet.cell_value(i, 1)+worksheet.cell_value(i, 2)+worksheet.cell_value(i, 3)+worksheet.cell_value(i, 5)
-        content1 = = worksheet.cell_value(i, 4)+worksheet.cell_value(i, 6)
+        content1 = worksheet.cell_value(i, 4)+worksheet.cell_value(i, 6)
         fatie(title1,content1)
  
 
